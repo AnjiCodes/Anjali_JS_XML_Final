@@ -1,0 +1,23 @@
+{
+  "name": "anjali_js_xml_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnjiCodes/JS_XML_Project.git"
+  },
+  "author": "AnjaliMahida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnjiCodes/JS_XML_Project/issues"
+  },
+  "homepage": "https://github.com/AnjiCodes/JS_XML_Project#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
