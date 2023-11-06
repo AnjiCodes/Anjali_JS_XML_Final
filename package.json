@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/AnjiCodes/Anjali_JS_XML_Final#readme",
   "dependencies": {
+    "axios": "^1.4.0",
     "express": "^4.18.2",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "xml2js": "^0.6.2"
   }
 }

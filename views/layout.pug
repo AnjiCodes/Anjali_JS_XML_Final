@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title BookWorld Website
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    header
+      nav
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/books') Books
+          li
+            a(href='/about') About
+          li
+            a(href='/contact') Contact
+          li.nav-icons
+            a(href='https://www.instagram.com/')
+            img(src='/images/instagram-icon.png', alt='Instagram')
+            a(href='https://www.facebook.com/')
+            img(src='/images/facebook-icon.png', alt='Facebook')
+    main
+      block content
+    footer
+      p &copy; 2023 BookWorld Website. All rights reserved.
+
+

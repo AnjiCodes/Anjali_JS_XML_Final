@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
+
+/* Reset some default styles */
+* {
+    font-family:'Lato', sans-serif;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Set a black background for the whole website and white font color */
+  body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Style the navigation bar */
+  header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid #fda6dc;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+  }
+  .nav-icons {
+    /* Adjust these values as needed to fine-tune the positioning */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: font-size 0.2s; 
+  }
+
+  nav li:hover a {
+    font-size: 20px; /* Adjust the font size as needed for the desired size increase */
+  }
+
+  /* Style the Instagram and Facebook icons */
+  .nav-icons {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .nav-icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  /* Add more styles for the other elements in your website here */
+  
+/* Style the footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #fda6dc;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  
+/* Style the links in the table */
+table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+td a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* Set link color to white */
+  font-size: 16px;
+  transition: font-size 0.2s, box-shadow 0.2s; /* Add smooth transition for font size and box shadow */
+}
+
+/* Increase font size and add neon pink shadow on hover */
+td a:hover {
+  font-size: 18px;
+  box-shadow: 0 0 10px #ff6ec7; /* Replace 'neonpink' with the actual color code for neon pink */
+}
+
+/* Set fixed width for the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 300px;
+}
+
+/* Set fixed height for the textarea */
+textarea {
+  height: 100px;
+}
