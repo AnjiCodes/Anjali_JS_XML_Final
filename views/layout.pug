@@ -6,7 +6,9 @@ html
   body
     header
       nav
-        ul
+        .logo
+          a(href='/') BOOKWORLD
+        ul.nav-links
           li
             a(href='/') Home
           li
@@ -15,14 +17,15 @@ html
             a(href='/about') About
           li
             a(href='/contact') Contact
-          li.nav-icons
-            a(href='https://www.instagram.com/')
-            img(src='/images/instagram-icon.png', alt='Instagram')
-            a(href='https://www.facebook.com/')
-            img(src='/images/facebook-icon.png', alt='Facebook')
+
     main
       block content
     footer
       p &copy; 2023 BookWorld Website. All rights reserved.
+
+
+
+
+
 
 

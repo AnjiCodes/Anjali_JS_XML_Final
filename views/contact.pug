@@ -1,26 +1,30 @@
 extends layout
 
 block content
-  h1 Contact Us
-  p
-    | Have a question or feedback? We'd love to hear from you! Please use the form below to get in touch with our team.
+  .container 
+    .center-content
+      h1.how-to Contact Us
+      p
+        | Have a question or feedback? 
+        br
+        | We'd love to hear from you! 
 
-  // Contact form
-  form
-    // Name input field
-    div
-      label(for="name") Your Name:
-      input(type="text", id="name", name="name", required)
-    
-    // Email input field
-    div
-      label(for="email") Your Email:
-      input(type="email", id="email", name="email", required)
+      // Contact form
+      form
+        // Name input field
+        div
+          label(for="name") Your Name:
+          input(type="text", id="name", name="name", required)
+        
+        // Email input field
+        div
+          label(for="email") Your Email:
+          input(type="email", id="email", name="email", required)
 
-    // Query (message) input field
-    div
-      label(for="query") Your Query:
-      textarea(id="query", name="query", rows="4", required)
+        // Query (message) input field
+        div
+          label(for="query") Your Query:
+          textarea(id="query", name="query", rows="4", required)
 
-    // Submit button
-    button(type="submit") Submit
+        // Submit button
+        button(type="submit") Submit

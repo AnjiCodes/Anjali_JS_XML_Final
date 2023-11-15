@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 /* Reset some default styles */
 * {
-    font-family:'Lato', sans-serif;
     margin: 0;
     padding: 5px;
     box-sizing: border-box;
@@ -12,6 +11,7 @@
   body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-family:'Lato', sans-serif;
   }
   
   /* Style the navigation bar */
@@ -22,23 +22,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
     position: relative;
   }
-  .nav-icons {
-    /* Adjust these values as needed to fine-tune the positioning */
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: 300;
+  font-size: 40px; 
+  font-family: 'Amatic SC', sans-serif;
+}
 
   nav ul {
     list-style: none;
     display: flex;
   }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   nav li {
     margin-right: 20px;
+    font-size: 18px;
+
   }
 
   nav a {
@@ -48,22 +64,10 @@
   }
 
   nav li:hover a {
-    font-size: 20px; /* Adjust the font size as needed for the desired size increase */
+    font-size: 22px; /* Adjust the font size as needed for the desired size increase */
+    color: #fda6dc;
   }
 
-  /* Style the Instagram and Facebook icons */
-  .nav-icons {
-    position: absolute;
-    right: 20px;
-  }
-  
-  .nav-icons img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-  }
-  
-  /* Add more styles for the other elements in your website here */
   
 /* Style the footer */
 footer {
@@ -93,13 +97,15 @@ td a {
   text-decoration: none;
   color: rgb(0, 0, 0); /* Set link color to white */
   font-size: 16px;
-  transition: font-size 0.2s, box-shadow 0.2s; /* Add smooth transition for font size and box shadow */
 }
 
 /* Increase font size and add neon pink shadow on hover */
 td a:hover {
   font-size: 18px;
-  box-shadow: 0 0 10px #ff6ec7; /* Replace 'neonpink' with the actual color code for neon pink */
+  border-color: #fda6dc; /* Replace 'neonpink' with the actual color code for neon pink */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
 }
 
 /* Set fixed width for the input fields */
@@ -112,4 +118,65 @@ textarea {
 /* Set fixed height for the textarea */
 textarea {
   height: 100px;
+}
+
+
+/* Home page CSS */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.center-content {
+  max-width: 600px; /* Adjust the max-width as needed */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome {
+  font-size: 40px;
+  color: #fda6dc;
+  font-family: 'Amatic SC', sans-serif;
+}
+
+.how-to {
+  font-size: 40px;
+  color: #fda6dc; 
+  font-family: 'Amatic SC', sans-serif;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+/* Books CSS */
+
+.top10, .About{
+  font-size: 40px;
+  color: #000000; 
+  font-family: 'Amatic SC', sans-serif;
+}
+
+.About{
+  color: #fda6dc;
+}
+
+.aboutpara1{
+  font-size: 18px;
+}
+
+
+
+.aboutpara2{
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+
 }
